@@ -1,0 +1,29 @@
+header{
+    border-bottom: 1px solid #ECECEC;
+
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+
+
+&__web {
+    color: var(--button-color);
+}
+
+&__studio {
+    color: var(--text-color);
+}}
