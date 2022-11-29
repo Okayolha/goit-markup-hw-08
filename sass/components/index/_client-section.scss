@@ -1,44 +1,46 @@
 .clients__title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
 .clients__box {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__element {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+  @media screen and (max-width: 767px) {
+    height: 92px;
+  }
 
-
-    &:not(:last-child) {
-        margin-right: 30px;
-}}
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: nowrap;
+  }
+}
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icons);
-    border-radius: 4px;
-    fill: var(--icons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons);
+  border-radius: 4px;
+  fill: var(--icons);
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    &:hover,
-    &:focus {
-        fill: var(--button-color);
-        border-color: var(--button-color);
-}}
+  &:hover,
+  &:focus {
+    fill: var(--button-color);
+    border-color: var(--button-color);
+  }
+}

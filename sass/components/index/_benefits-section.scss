@@ -1,43 +1,77 @@
 .benefits__box {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
 
-    & .benefits__element {
-        flex-basis: calc((100% - 90px) / 4);
-}}
+.benefits__element {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
 
 .benefits__name {
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 
-    color: var(--text-color);
-    font-weight: 700;
-    line-height: 1.14;
-    font-size: 14px;
-    text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  text-transform: uppercase;
 
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 .benefits__text {
-    line-height: 1.71;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .benefits__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--animation-name);
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-color: var(--animation-name);
+  }
 }
 
 .benefits__icon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-
-    &:not(:last-child) {
-        margin-right: 30px;
-}}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
