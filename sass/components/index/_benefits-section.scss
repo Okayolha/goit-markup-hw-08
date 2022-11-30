@@ -10,7 +10,6 @@
 
 .benefits__element {
   @media screen and (min-width: 768px) {
-    width: 50%;
     flex-basis: calc((100% - 90px) / 4);
   }
   @media screen and (max-width: 767px) {
@@ -22,6 +21,7 @@
 
 .benefits__name {
   display: flex;
+  justify-content: center;
   margin-bottom: 10px;
 
   color: var(--text-color);
@@ -30,9 +30,6 @@
   font-size: 14px;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
-    justify-content: center;
-  }
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
@@ -58,7 +55,7 @@
   @media screen and (min-width: 480px) {
     width: 100%;
   }
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
