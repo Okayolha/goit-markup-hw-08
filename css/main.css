@@ -1490,6 +1490,11 @@ header {
   background-color: transparent;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 479px) {
+  .footer__input {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__input {
     width: 358px;
